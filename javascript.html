@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    Nama: <i id="value nama"></i>
+    <br>
+    Umur: <i id="value umur"></i>
+    <script>
+        // String variable
+        var nama = "Vincent";
+        let umur = 19;
+        let tinggi = 170;
+        let film_favorit = ["Avengers, Up"]
+        console.log("Nama: " + nama)
+        console.log("Umur: " + umur)
+        console.log("Tinggi: " + tinggi + "cm")
+        console.log(film_favorit[1])
+
+        // Aritmetic operation
+        let a = 14
+        let b = 18.9
+
+        let jumlah = a + b
+        console.log("Hasil penjumlahan a & b: " + jumlah)
+
+        let kurang = a - b
+        console.log("Hasil pengurangan a & b: " + kurang)
+
+        let bagi = a / b
+        console.log("Hasil pembagian a & b: " + bagi)
+
+        let sisa = a % b
+        console.log("Hasil sisa pembagian a & b: " + sisa)
+
+        let pangkat = a ** b
+        console.log("Hasil pangkat a & b: " + pangkat)
+
+        // Conditional statement
+        let nilai = 73
+
+        if (nilai>= 90) {
+            console.log("Nilai: A");
+        } else if (nilai>= 85) {
+            console.log("Nilai: B");
+        } else if (nilai>= 80) {
+            console.log("Nilai: C");
+        } else if (nilai>= 75) {
+            console.log("Nilai: D");
+        } else {
+            console.log("Nilai: E")
+        }
+
+        // Looping
+        for (let i = 2; i<=6; i++) {
+            console.log("Perulangan ke-" +i)
+        }
+
+        // Function
+        function penjumlahan(a,b) {
+            return console.log("Hasil penjumlahan: "+ (a+b));
+        }
+
+        // Memanggil function
+        penjumlahan (14,7)
+
+        // Menampilkan nama
+        document.getElementById("value nama").innerHTML = nama
+        document.getElementById("value umur").innerHTML = umur
+    </script>
+</body>
+
+</html>
